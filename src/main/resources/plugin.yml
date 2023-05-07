@@ -2,3 +2,7 @@ name: AntiMobs
 version: '${project.version}'
 main: github.aixoio.antimobs.AntiMobs
 api-version: 1.19
+commands:
+  toggle-mobs:
+    description: Lets players toggle
+    permission: antimobs.toggle
