@@ -24,6 +24,9 @@ public class ToggleCommand implements CommandExecutor {
 
             }
 
+            AntiMobs.getPlugin().saveConfig();
+            AntiMobs.getPlugin().reloadConfig();
+
         } else {
 
             sender.sendMessage(ChatColor.DARK_RED + "You do not have the required permission to use this command!");
