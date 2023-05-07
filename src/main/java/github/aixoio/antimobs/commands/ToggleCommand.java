@@ -17,10 +17,12 @@ public class ToggleCommand implements CommandExecutor {
             if (AntiMobs.getPlugin().getConfig().getBoolean("Active")) {
 
                 AntiMobs.getPlugin().getConfig().set("Active", false);
+                sender.sendMessage(ChatColor.GREEN + "Mobs off");
 
             } else {
 
                 AntiMobs.getPlugin().getConfig().set("Active", true);
+                sender.sendMessage(ChatColor.GREEN + "Mobs on");
 
             }
 
